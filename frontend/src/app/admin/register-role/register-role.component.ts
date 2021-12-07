@@ -36,7 +36,7 @@ export class RegisterRoleComponent implements OnInit {
     else {
       this._roleService.registerRole(this.registerData).subscribe({
         next: (v) => {
-          this._router.navigate(['/listTask']);
+          this._router.navigate(['/listRole']);
           this.message = 'Role registered';
           this.openSnackBarSuccesfull();
         },
